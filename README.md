@@ -3,11 +3,18 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: Constraint propagation deals with propagating constraints to other dependent variables because of 
+	changes in one variable. Propagating constraints in such a way eliminates the possible list
+	of values that a variable can take which simplifies/makes efficient searching for the solution
+	later on. For naked twins strategy, in similar way to elimination strategy, the values in 
+	a naked twins are eliminated from all the variables in the same unit sharing the naked twin.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: Constraint propagation is done in exactly the same way as it is done in elimination strategy
+	and only choice strategy for solving general sudoku. The only difference is we add new statements to handle the
+	elimination and only choice strategy by checking if a variable(square) is in one of the diagonals
+	and if present propagating the constraints to fellow variables in the applicable diagonal.
 
 ### Install
 
